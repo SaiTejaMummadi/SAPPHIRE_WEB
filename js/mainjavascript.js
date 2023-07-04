@@ -1,5 +1,5 @@
 var slideIndex = 0;
-setTimeout(showSlides, 2000); // Start slideshow after 2 seconds
+setTimeout(showSlides, 1000); // Start slideshow after 2 seconds
 
 function showSlides() {
     var i;
