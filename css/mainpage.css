@@ -13,10 +13,14 @@ header {
     background-color: #959aff;
     border-bottom: 1px solid #ffffff;
     color: antiquewhite;
+    font-size: 42px;
 }
 
+#logo{
+
+}
 #brand-name {
-    font-size: 36px;
+    font-size: 64px;
 }
 
 #sign-up {
@@ -27,6 +31,70 @@ header {
     color: #fff;
     cursor: pointer;
 }
+
+/////////
+/* ...existing CSS... */
+
+.tools-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.tools-btn {
+    margin-right: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+.tools-menu {
+    display: none;
+    position: absolute;
+    background-color:  #959aff;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.tools-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+
+}
+
+.tools-menu a:hover {background-color: #f1f1f1;}
+
+
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+
+.login-btn,
+.signup-btn
+{
+    margin-right: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+
 
 #main-content {
     height: 90%;
@@ -213,12 +281,13 @@ ol{
     width: 100%;
     display: flex;
     align-items: center;
+    /*background: rgba(149, 154, 255, 0.78);*/
 }
 
 .map-header {
     height: 200px;
     width: 400px;
-    background: #ffffff;
+    /*background: rgba(149, 154, 255, 0.78);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,6 +301,7 @@ ol{
     justify-content: center;
     align-items: center;
     padding-left: 100px;
+    /*background: rgba(149, 154, 255, 0.78);*/
 }
 
 .map {
@@ -239,3 +309,70 @@ ol{
     max-width: 100%;
 }
 
+.info-block {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: #bbbbbb;
+    font-size: 24px;
+}
+
+/* ...existing CSS... */
+
+.links-block {
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-block h2 {
+    margin-bottom: 20px;
+}
+
+.links-block ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.links-block li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.links-block li img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.links-block li a {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+}
+
+/* ...rest of the CSS... */
+
+
+.uni-block {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.uni-logo {
+    max-height: 50%;
+    max-width: 50%;
+}

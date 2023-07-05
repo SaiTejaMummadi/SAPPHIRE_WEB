@@ -43,3 +43,13 @@ function currentSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toolsBtn = document.querySelector('.tools-btn');
+    var toolsMenu = document.querySelector('.tools-menu');
+
+    toolsBtn.addEventListener('click', function() {
+        var isShown = toolsMenu.style.display === 'block';
+        toolsMenu.style.display = isShown ? 'none' : 'block';
+    });
+});
