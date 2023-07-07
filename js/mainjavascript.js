@@ -53,3 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
         toolsMenu.style.display = isShown ? 'none' : 'block';
     });
 });
+
+function updatePlaceholder() {
+    var checkBox = document.getElementById("mtech");
+    var emailField = document.getElementById("email");
+    if (checkBox.checked) {
+        emailField.placeholder = "example@mtu.edu";
+    } else {
+        emailField.placeholder = "example@example.com";
+    }
+}

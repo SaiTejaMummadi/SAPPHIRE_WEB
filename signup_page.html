@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sapphire</title>
+    <link rel="stylesheet" type="text/css" href="css/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="css/signup_page_style.css">
+
+    <script src="js/mainjavascript.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">SAPPHIRE</div>
+</header>
+<div class="signup-form-container">
+  <form class="signup-form">
+    <div>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="John">
+    </div>
+    <div>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" placeholder="Doe">
+    </div>
+    <div>
+      <label for="mtech">Michigan Tech?</label>
+      <input type="checkbox" id="mtech" name="mtech" onchange="updatePlaceholder()">
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com">
+    </div>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"placeholder="+1 (123) 456 - 7890">
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+    <div>
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex">
+        <option value="_not">-</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="addr1">Address Line 1:</label>
+      <input type="text" id="addr1" name="addr1" placeholder="Address Line 1">
+    </div>
+    <div>
+      <label for="addr2">Address Line 2:</label>
+      <input type="text" id="addr2" name="addr2" placeholder="Address Line 2">
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="City">
+    </div>
+    <div>
+      <label for="state">State/Province:</label>
+      <input type="text" id="state" name="state" placeholder="State">
+    </div>
+    <div>
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" placeholder="Country">
+    </div>
+    <div class="submit-button">
+      <input type="submit" value="Sign Up">
+    </div>
+  </form>
+</div>
+
+
+</body>
+</html>
